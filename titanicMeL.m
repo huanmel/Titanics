@@ -22,7 +22,7 @@ tt.Survived=logical(zeros(size(tt.Sex)));
 tt.S=tt.Sex=='female';
 tr.S=tr.Sex=='female';
 %% Выборки данных
-cv = cvpartition(height(tr),'holdout',0.45);
+cv = cvpartition(height(tr),'holdout',0.44);
 Y=tr.Survived;
 X=tr;
 X.Survived=[];
